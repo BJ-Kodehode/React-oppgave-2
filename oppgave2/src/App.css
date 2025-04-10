@@ -1,42 +1,68 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #d84646;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  width: 100%;
+}
+
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: 2rem auto;
   padding: 2rem;
+  background-color: rgb(161, 131, 131);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  background-color: #2f418d;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.5rem 0 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+button:hover {
+  background-color: #f7c948;
 }
 
-.card {
-  padding: 2em;
+input {
+  padding: 0.5rem;
+  margin: 1rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
 }
 
-.read-the-docs {
-  color: #888;
+img {
+  width: 100px;
+  transition: transform 0.2s ease;
+}
+
+button img:hover {
+  transform: scale(1.1);
+}
+
+ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  text-align: left;
+}
+
+li {
+  margin-bottom: 0.5rem;
 }
